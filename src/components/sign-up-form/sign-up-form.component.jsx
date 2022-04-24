@@ -77,7 +77,7 @@ const SignUpForm =()=>{
                 inputOptions={{type:'password',value:confirmPassword,
                 required:true, name:'confirmPassword',onChange:handleChange}} />
 
-                <Button type='submit'>
+                <Button  type='submit'>
                     Sign Up
                 </Button>
             </form>
