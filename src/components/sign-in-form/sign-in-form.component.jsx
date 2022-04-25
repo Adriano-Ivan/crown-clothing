@@ -14,8 +14,7 @@ const SignInForm =()=>{
     const {email, password} = formFields;
 
     const logGoogleUser = async()=>{
-        const {user} = await signInWithGooglePopUp();
-        const userDocRef = await createUserDocumentFromAuth(user);
+       await signInWithGooglePopUp();
     }
     const resetFields = () =>{
         setFormFields(defaultFormFields);
@@ -23,7 +22,8 @@ const SignInForm =()=>{
     const handleSubmit = async(event)=>{
         event.preventDefault();
         try {
-            const userCredential = await signInAuthUserWithEmailAndPassword(email, password);
+            const {user}= await signInAuthUserWithEmailAndPassword(email, password);
+
             resetFields();
         }catch(error){
             switch(error.code){
@@ -47,7 +47,7 @@ const SignInForm =()=>{
             [name]:value
         });
 
-        console.log(formFields);
+        // console.log(formFields);
     }
     return (
         <div class='sign-up-container' >

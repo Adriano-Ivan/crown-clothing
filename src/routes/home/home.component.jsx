@@ -1,5 +1,5 @@
 import {Outlet} from 'react-router-dom';
-import CategoriesContainer from "../../categories-container/categories-container.component.jsx";
+import CategoriesContainer from "../../components/categories-container/categories-container.component.jsx";
 import {Fragment} from 'react';
 
 const Home = () => {
