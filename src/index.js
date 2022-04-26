@@ -6,8 +6,8 @@ import App from './App';
 import { UserProvider } from './contexts/user.context';
 import './index.scss';
 import { ProductsProvider } from './contexts/product.context';
-import { CartDropdownOpenOrClosedProvider } 
-  from './contexts/cart-dropdown-open-or-closed.context';
+import { CartProvider } 
+  from './contexts/cart.context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,9 +15,9 @@ root.render(
     <BrowserRouter>
       <UserProvider>
         <ProductsProvider>
-          <CartDropdownOpenOrClosedProvider>
+          <CartProvider>
             <App />
-          </CartDropdownOpenOrClosedProvider>
+          </CartProvider>
         </ProductsProvider>
       </UserProvider>
     </BrowserRouter>
