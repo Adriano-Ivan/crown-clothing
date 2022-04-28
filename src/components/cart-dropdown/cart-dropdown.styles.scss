@@ -1,6 +1,6 @@
 .cart-dropdown-container {
     position: absolute;
-    width: 240px;
+    width: 320px;
     height: 340px;
     display: flex;
     flex-direction: column;
@@ -25,6 +25,13 @@
   
     button {
       margin-top: auto;
+
+      // a {
+      //   color: white;
+      // }
+      // a:hover{
+      //   color: #000;
+      // }
     }
 
   }
